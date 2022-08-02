@@ -61,7 +61,7 @@ def check_file(file):
 def walk_dir(dir):
     for root, dirs, files in os.walk(dir):
         for f in files:
-            s = root + '/' + f
+            s = f'{root}/{f}'
             check_file(s)
 
     for d in dirs:
